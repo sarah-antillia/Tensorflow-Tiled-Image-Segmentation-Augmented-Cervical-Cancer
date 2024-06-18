@@ -34,7 +34,7 @@ Namely, this is a mixed set of Tiled and Non-Tiled ImageMask Datasets.<br>
 <hr>
 
 Actual Tiled Image Segmentation for the images of 2K pixels.<br>
-As shown below, the tiled inferred regions predicted by this segmentation model were not perfect, but almost succeful.
+As shown below, the tiled inferred regions predicted by this segmentation model were not perfect, but almost successful.
 
 <table>
 <tr>
