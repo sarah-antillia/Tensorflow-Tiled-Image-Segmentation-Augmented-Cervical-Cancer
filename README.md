@@ -20,7 +20,7 @@ In this experiment, we employed the following strategy:<br>
 <br>
 1. We trained and validated a TensorFlow UNet model using the Tiled-Cervical-Cancer-ImageMask-Dataset, which was tiledly-splitted to 512x512
  and reduced to 512x512 image and mask dataset.<br>
-2. We applied the Tiled-Image Segmentation inference method to predict the skin-cancer regions for the test images 
+2. We applied the Tiled-Image Segmentation inference method to predict the cervical-cancer regions for the test images 
 with a resolution of 2K pixels. 
 <br><br>
 </b>  
@@ -147,7 +147,7 @@ Please expand the downloaded ImageMaskDataset and place them under <b>./dataset<
 <br>
 As shown above, the number of images of train and valid dataset is not necessarily large. 
 Therefore, an online dataset augmentation by  <a href="./src/ImageMaskAugmentor.py">Augmentation Tool</a>
-strategy to train this Skin-Cancer model may be effective to get a better trained model.<br>
+strategy to train this Cervical-Cancer model may be effective to get a better trained model.<br>
 In order to enable the online Augmentation Tool, you set <b>generator</b> parameter to be True as shown below.
 <pre>
 [model]
