@@ -5,7 +5,7 @@ the <a href="https://github.com/sarah-antillia/Tensorflow-Image-Segmentation-API
 <a href="https://drive.google.com/file/d/1YEwgvxrdV7738Vd0XmkBGgA3lWRE-BWx/view?usp=sharing">
 Tiled-Cervical-Cancer-ImageMask-Dataset-X</a> 
 , which was derived by us from the original 
-data <a href="https://www.kaggle.com/datasets/prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed">Cervical Cancer largest dataset (SipakMed)</a>
+dataset <a href="https://www.kaggle.com/datasets/prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed">Cervical Cancer largest dataset (SipakMed)</a>
  in the website of kaggle.com
 <br>
 <br>
@@ -75,7 +75,7 @@ you may try other Tensorflow UNet Models:<br>
 <li><a href="./src/TensorflowAttentionUNet.py">TensorflowAttentionUNet.py</a></li>
 <li><a href="./src/TensorflowEfficientUNet.py">TensorflowEfficientUNet.py</a></li>
 <li><a href="./src/TensorflowUNet3Plus.py">TensorflowUNet3Plus.py</a></li>
-<li><a href="./src/TensorflowDeepLabV3Plus.py">TensorflowDeepLabV3Plus.py</a><li>
+<li><a href="./src/TensorflowDeepLabV3Plus.py">TensorflowDeepLabV3Plus.py</a></li>
 <br>
 
 <h3>1. Dataset Citation</h3>
