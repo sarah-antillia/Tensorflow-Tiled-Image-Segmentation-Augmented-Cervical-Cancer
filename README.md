@@ -18,7 +18,7 @@ Please see also our experiments.<br>
 In this experiment, we employed the following strategy:<br>
 <b>
 <br>
-1. We trained and validated a TensorFlow UNet model using the Tiled-Cervical-Cancer-ImageMask-Dataset, which was tiledly-split to 512x512
+1. We trained and validated a TensorFlow UNet model using the Tiled-Cervical-Cancer-ImageMask-Dataset, which was tiledly-splitted to 512x512
  and reduced to 512x512 image and mask dataset.<br>
 2. We applied the Tiled-Image Segmentation inference method to predict the skin-cancer regions for the test images 
 with a resolution of 2K pixels. 
@@ -27,7 +27,7 @@ with a resolution of 2K pixels.
  Please note that <a href="https://drive.google.com/file/d/1YEwgvxrdV7738Vd0XmkBGgA3lWRE-BWx/view?usp=sharing">
  Tiled-Cervical-Cancer-ImageMask-Dataset-X</a> contains two types of images and masks:
  <br> 
-1. Tiledly-split to 512x512 image and mask  files.<br>
+1. Tiledly-splitted to 512x512 image and mask files.<br>
 2. Size-reduced to 512x512 image and mask files.<br>
 
 Namely, this is a mixed set of Tiled and Non-Tiled ImageMask Datasets.<br>
