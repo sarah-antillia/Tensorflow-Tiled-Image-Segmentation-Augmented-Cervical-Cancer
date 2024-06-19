@@ -1,0 +1,270 @@
+Epoch 1: val_loss improved from inf to 0.55091, saving model to ./models\best_model.h5
+E:\py310-efficientdet\lib\site-packages\keras\engine\training_v1.py:2356: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates=self.state_updates,
+400/400 [==============================] - 1013s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.6417 - binary_accuracy: 0.9179 -
+ val_loss: 0.5509 - val_binary_accuracy: 0.9219 - lr: 2.0000e-04
+Epoch 2/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5369 - binary_accuracy: 0.9227
+Epoch 2: val_loss improved from 0.55091 to 0.52949, saving model to ./models\best_model.h5
+400/400 [==============================] - 990s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5369 - binary_accuracy: 0.9227 
+- val_loss: 0.5295 - val_binary_accuracy: 0.9347 - lr: 2.0000e-04
+Epoch 3/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5710 - binary_accuracy: 0.9174
+Epoch 3: val_loss improved from 0.52949 to 0.52739, saving model to ./models\best_model.h5
+400/400 [==============================] - 988s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5710 - binary_accuracy: 0.9174 
+- val_loss: 0.5274 - val_binary_accuracy: 0.9274 - lr: 2.0000e-04
+Epoch 4/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5463 - binary_accuracy: 0.9242
+Epoch 4: val_loss did not improve from 0.52739
+400/400 [==============================] - 980s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5463 - binary_accuracy: 0.9242 
+- val_loss: 0.5335 - val_binary_accuracy: 0.9257 - lr: 2.0000e-04
+Epoch 5/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5252 - binary_accuracy: 0.9262
+Epoch 5: val_loss improved from 0.52739 to 0.52437, saving model to ./models\best_model.h5
+400/400 [==============================] - 982s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5252 - binary_accuracy: 0.9262 
+- val_loss: 0.5244 - val_binary_accuracy: 0.9190 - lr: 2.0000e-04
+Epoch 6/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5143 - binary_accuracy: 0.9328
+Epoch 6: val_loss did not improve from 0.52437
+400/400 [==============================] - 999s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5143 - binary_accuracy: 0.9328 
+- val_loss: 0.5839 - val_binary_accuracy: 0.8517 - lr: 2.0000e-04
+Epoch 7/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5227 - binary_accuracy: 0.9195
+Epoch 7: val_loss improved from 0.52437 to 0.51743, saving model to ./models\best_model.h5
+400/400 [==============================] - 979s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5227 - binary_accuracy: 0.9195 
+- val_loss: 0.5174 - val_binary_accuracy: 0.9100 - lr: 2.0000e-04
+Epoch 8/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5367 - binary_accuracy: 0.9153
+Epoch 8: val_loss improved from 0.51743 to 0.50538, saving model to ./models\best_model.h5
+400/400 [==============================] - 985s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5367 - binary_accuracy: 0.9153 
+- val_loss: 0.5054 - val_binary_accuracy: 0.9491 - lr: 2.0000e-04
+Epoch 9/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4706 - binary_accuracy: 0.9361
+Epoch 9: val_loss did not improve from 0.50538
+400/400 [==============================] - 978s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4706 - binary_accuracy: 0.9361 
+- val_loss: 0.5393 - val_binary_accuracy: 0.8746 - lr: 2.0000e-04
+Epoch 10/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4576 - binary_accuracy: 0.9285
+Epoch 10: val_loss improved from 0.50538 to 0.43575, saving model to ./models\best_model.h5
+400/400 [==============================] - 982s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4576 - binary_accuracy: 0.9285 
+- val_loss: 0.4358 - val_binary_accuracy: 0.9422 - lr: 2.0000e-04
+Epoch 11/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.5009 - binary_accuracy: 0.9248
+Epoch 11: val_loss did not improve from 0.43575
+400/400 [==============================] - 976s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.5009 - binary_accuracy: 0.9248 
+- val_loss: 0.4878 - val_binary_accuracy: 0.8989 - lr: 2.0000e-04
+Epoch 12/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4846 - binary_accuracy: 0.9192
+Epoch 12: val_loss did not improve from 0.43575
+400/400 [==============================] - 981s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4846 - binary_accuracy: 0.9192 
+- val_loss: 0.4588 - val_binary_accuracy: 0.9466 - lr: 2.0000e-04
+Epoch 13/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4274 - binary_accuracy: 0.9306
+Epoch 13: val_loss improved from 0.43575 to 0.41587, saving model to ./models\best_model.h5
+400/400 [==============================] - 981s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4274 - binary_accuracy: 0.9306 
+- val_loss: 0.4159 - val_binary_accuracy: 0.9241 - lr: 2.0000e-04
+Epoch 14/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4327 - binary_accuracy: 0.9314
+Epoch 14: val_loss did not improve from 0.41587
+400/400 [==============================] - 987s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4327 - binary_accuracy: 0.9314 
+- val_loss: 0.4289 - val_binary_accuracy: 0.9389 - lr: 2.0000e-04
+Epoch 15/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4222 - binary_accuracy: 0.9377
+Epoch 15: val_loss did not improve from 0.41587
+400/400 [==============================] - 992s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4222 - binary_accuracy: 0.9377 
+- val_loss: 0.4680 - val_binary_accuracy: 0.9379 - lr: 2.0000e-04
+Epoch 16/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.4159 - binary_accuracy: 0.9336
+Epoch 16: val_loss did not improve from 0.41587
+400/400 [==============================] - 1007s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.4159 - binary_accuracy: 0.9336 
+- val_loss: 0.5422 - val_binary_accuracy: 0.9296 - lr: 2.0000e-04
+Epoch 17/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3958 - binary_accuracy: 0.9414
+Epoch 17: val_loss did not improve from 0.41587
+400/400 [==============================] - 999s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3958 - binary_accuracy: 0.9414 
+- val_loss: 0.4186 - val_binary_accuracy: 0.9477 - lr: 2.0000e-04
+Epoch 18/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3877 - binary_accuracy: 0.9385
+Epoch 18: val_loss did not improve from 0.41587
+400/400 [==============================] - 973s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3877 - binary_accuracy: 0.9385 
+- val_loss: 0.4310 - val_binary_accuracy: 0.9156 - lr: 4.0000e-05
+Epoch 19/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3653 - binary_accuracy: 0.9396
+Epoch 19: val_loss improved from 0.41587 to 0.39284, saving model to ./models\best_model.h5
+400/400 [==============================] - 974s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3653 - binary_accuracy: 0.9396 
+- val_loss: 0.3928 - val_binary_accuracy: 0.9418 - lr: 4.0000e-05
+Epoch 20/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3425 - binary_accuracy: 0.9402
+Epoch 20: val_loss improved from 0.39284 to 0.35504, saving model to ./models\best_model.h5
+400/400 [==============================] - 977s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3425 - binary_accuracy: 0.9402 
+- val_loss: 0.3550 - val_binary_accuracy: 0.9406 - lr: 4.0000e-05
+Epoch 21/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3549 - binary_accuracy: 0.9457
+Epoch 21: val_loss did not improve from 0.35504
+400/400 [==============================] - 971s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3549 - binary_accuracy: 0.9457 
+- val_loss: 0.4000 - val_binary_accuracy: 0.9237 - lr: 4.0000e-05
+Epoch 22/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3391 - binary_accuracy: 0.9436
+Epoch 22: val_loss improved from 0.35504 to 0.30909, saving model to ./models\best_model.h5
+400/400 [==============================] - 976s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3391 - binary_accuracy: 0.9436 
+- val_loss: 0.3091 - val_binary_accuracy: 0.9501 - lr: 4.0000e-05
+Epoch 23/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3553 - binary_accuracy: 0.9409
+Epoch 23: val_loss did not improve from 0.30909
+400/400 [==============================] - 1045s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3553 - binary_accuracy: 0.9409 
+- val_loss: 0.3450 - val_binary_accuracy: 0.9303 - lr: 4.0000e-05
+Epoch 24/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3178 - binary_accuracy: 0.9501
+Epoch 24: val_loss did not improve from 0.30909
+400/400 [==============================] - 986s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3178 - binary_accuracy: 0.9501 
+- val_loss: 0.3618 - val_binary_accuracy: 0.9343 - lr: 4.0000e-05
+Epoch 25/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3129 - binary_accuracy: 0.9470
+Epoch 25: val_loss did not improve from 0.30909
+400/400 [==============================] - 967s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3129 - binary_accuracy: 0.9470 
+- val_loss: 0.3197 - val_binary_accuracy: 0.9483 - lr: 4.0000e-05
+Epoch 26/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3222 - binary_accuracy: 0.9450
+Epoch 26: val_loss did not improve from 0.30909
+400/400 [==============================] - 967s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3222 - binary_accuracy: 0.9450 
+- val_loss: 0.3416 - val_binary_accuracy: 0.9321 - lr: 4.0000e-05
+Epoch 27/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3232 - binary_accuracy: 0.9522
+Epoch 27: val_loss improved from 0.30909 to 0.28159, saving model to ./models\best_model.h5
+400/400 [==============================] - 968s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3232 - binary_accuracy: 0.9522 
+- val_loss: 0.2816 - val_binary_accuracy: 0.9469 - lr: 8.0000e-06
+Epoch 28/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2978 - binary_accuracy: 0.9542
+Epoch 28: val_loss did not improve from 0.28159
+400/400 [==============================] - 962s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2978 - binary_accuracy: 0.9542 
+- val_loss: 0.3192 - val_binary_accuracy: 0.9443 - lr: 8.0000e-06
+Epoch 29/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2971 - binary_accuracy: 0.9519
+Epoch 29: val_loss did not improve from 0.28159
+400/400 [==============================] - 964s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2971 - binary_accuracy: 0.9519 
+- val_loss: 0.3132 - val_binary_accuracy: 0.9462 - lr: 8.0000e-06
+Epoch 30/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3242 - binary_accuracy: 0.9480
+Epoch 30: val_loss did not improve from 0.28159
+400/400 [==============================] - 963s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3242 - binary_accuracy: 0.9480 
+- val_loss: 0.3506 - val_binary_accuracy: 0.9384 - lr: 8.0000e-06
+Epoch 31/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3078 - binary_accuracy: 0.9513
+Epoch 31: val_loss did not improve from 0.28159
+400/400 [==============================] - 969s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3078 - binary_accuracy: 0.9513 
+- val_loss: 0.3134 - val_binary_accuracy: 0.9472 - lr: 8.0000e-06
+Epoch 32/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2920 - binary_accuracy: 0.9567
+Epoch 32: val_loss did not improve from 0.28159
+400/400 [==============================] - 991s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2920 - binary_accuracy: 0.9567 
+- val_loss: 0.2871 - val_binary_accuracy: 0.9576 - lr: 1.6000e-06
+Epoch 33/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2934 - binary_accuracy: 0.9546
+Epoch 33: val_loss did not improve from 0.28159
+400/400 [==============================] - 988s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2934 - binary_accuracy: 0.9546 
+- val_loss: 0.3668 - val_binary_accuracy: 0.9269 - lr: 1.6000e-06
+Epoch 34/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2973 - binary_accuracy: 0.9536
+Epoch 34: val_loss improved from 0.28159 to 0.26939, saving model to ./models\best_model.h5
+400/400 [==============================] - 980s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2973 - binary_accuracy: 0.9536 
+- val_loss: 0.2694 - val_binary_accuracy: 0.9577 - lr: 1.6000e-06
+Epoch 35/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3059 - binary_accuracy: 0.9501
+Epoch 35: val_loss did not improve from 0.26939
+400/400 [==============================] - 979s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3059 - binary_accuracy: 0.9501 
+- val_loss: 0.2752 - val_binary_accuracy: 0.9533 - lr: 1.6000e-06
+Epoch 36/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2863 - binary_accuracy: 0.9544
+Epoch 36: val_loss did not improve from 0.26939
+400/400 [==============================] - 985s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2863 - binary_accuracy: 0.9544 
+- val_loss: 0.2887 - val_binary_accuracy: 0.9481 - lr: 1.6000e-06
+Epoch 37/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2963 - binary_accuracy: 0.9518
+Epoch 37: val_loss did not improve from 0.26939
+400/400 [==============================] - 999s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2963 - binary_accuracy: 0.9518 
+- val_loss: 0.2813 - val_binary_accuracy: 0.9580 - lr: 1.6000e-06
+Epoch 38/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3155 - binary_accuracy: 0.9518
+Epoch 38: val_loss did not improve from 0.26939
+400/400 [==============================] - 974s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3155 - binary_accuracy: 0.9518 
+- val_loss: 0.2856 - val_binary_accuracy: 0.9509 - lr: 1.6000e-06
+Epoch 39/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3040 - binary_accuracy: 0.9534
+Epoch 39: val_loss did not improve from 0.26939
+400/400 [==============================] - 974s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3040 - binary_accuracy: 0.9534 
+- val_loss: 0.3379 - val_binary_accuracy: 0.9457 - lr: 3.2000e-07
+Epoch 40/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2999 - binary_accuracy: 0.9479
+Epoch 40: val_loss did not improve from 0.26939
+400/400 [==============================] - 985s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2999 - binary_accuracy: 0.9479 
+- val_loss: 0.2808 - val_binary_accuracy: 0.9604 - lr: 3.2000e-07
+Epoch 41/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2927 - binary_accuracy: 0.9521
+Epoch 41: val_loss did not improve from 0.26939
+400/400 [==============================] - 990s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2927 - binary_accuracy: 0.9521 - val_loss: 0.3108 - val_binary_accuracy: 0.9420 
+
+- lr: 3.2000e-07
+Epoch 42/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3220 - binary_accuracy: 0.9440
+Epoch 42: val_loss did not improve from 0.26939
+400/400 [==============================] - 1109s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3220 - binary_accuracy: 0.9440 - val_loss: 0.3149 - val_binary_accuracy: 0.9384 
+- lr: 3.2000e-07
+Epoch 43/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2855 - binary_accuracy: 0.9574
+Epoch 43: val_loss did not improve from 0.26939
+400/400 [==============================] - 1150s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2855 - binary_accuracy: 0.9574 - val_loss: 0.2745 - val_binary_accuracy: 0.9549 
+- lr: 6.4000e-08
+Epoch 44/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2823 - binary_accuracy: 0.9569
+Epoch 44: val_loss improved from 0.26939 to 0.26539, saving model to ./models\best_model.h5
+400/400 [==============================] - 1127s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2823 - binary_accuracy: 0.9569 - val_loss: 0.2654 - val_binary_accuracy: 0.9615 
+- lr: 6.4000e-08
+Epoch 45/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3002 - binary_accuracy: 0.9544
+Epoch 45: val_loss did not improve from 0.26539
+400/400 [==============================] - 1222s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3002 - binary_accuracy: 0.9544 - val_loss: 0.3534 - val_binary_accuracy: 0.9472 
+- lr: 6.4000e-08
+Epoch 46/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2805 - binary_accuracy: 0.9592
+Epoch 46: val_loss did not improve from 0.26539
+400/400 [==============================] - 1143s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2805 - binary_accuracy: 0.9592 - val_loss: 0.2709 - val_binary_accuracy: 0.9551 
+- lr: 6.4000e-08
+Epoch 47/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3088 - binary_accuracy: 0.9504
+Epoch 47: val_loss did not improve from 0.26539
+400/400 [==============================] - 1030s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3088 - binary_accuracy: 0.9504 - val_loss: 0.3064 - val_binary_accuracy: 0.9521 
+- lr: 6.4000e-08
+Epoch 48/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2732 - binary_accuracy: 0.9577
+Epoch 48: val_loss did not improve from 0.26539
+400/400 [==============================] - 1101s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2732 - binary_accuracy: 0.9577 - val_loss: 0.3154 - val_binary_accuracy: 0.9504 
+- lr: 6.4000e-08
+Epoch 49/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2899 - binary_accuracy: 0.9544
+Epoch 49: val_loss did not improve from 0.26539
+400/400 [==============================] - 1129s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2899 - binary_accuracy: 0.9544 - val_loss: 0.2703 - val_binary_accuracy: 0.9566 
+- lr: 1.2800e-08
+Epoch 50/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2921 - binary_accuracy: 0.9555
+Epoch 50: val_loss did not improve from 0.26539
+400/400 [==============================] - 1067s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2921 - binary_accuracy: 0.9555 - val_loss: 0.2804 - val_binary_accuracy: 0.9535 
+- lr: 1.2800e-08
+Epoch 51/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.2924 - binary_accuracy: 0.9541
+Epoch 51: val_loss did not improve from 0.26539
+400/400 [==============================] - 1075s 3s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2924 - binary_accuracy: 0.9541 - val_loss: 0.2679 - val_binary_accuracy: 0.9630 
+- lr: 1.2800e-08
+Epoch 52: val_loss did not improve from 0.26539
+400/400 [==============================] - 993s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.2865 - binary_accuracy: 0.9569 - val_loss: 0.2996 - val_binary_accuracy: 0.9497 
+- lr: 1.2800e-08
+Epoch 53/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3016 - binary_accuracy: 0.9513
+Epoch 53: val_loss did not improve from 0.26539
+400/400 [==============================] - 987s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3016 - binary_accuracy: 0.9513 - val_loss: 0.2696 - val_binary_accuracy: 0.9629 
+- lr: 2.5600e-09
+Epoch 54/100
+400/400 [==============================] - ETA: 0s - batch: 199.5000 - size: 2.0000 - loss: 0.3048 - binary_accuracy: 0.9535
+Epoch 54: val_loss did not improve from 0.26539
+
+400/400 [==============================] - 991s 2s/step - batch: 199.5000 - size: 2.0000 - loss: 0.3048 - binary_accuracy: 0.9535 - val_loss: 0.2762 - val_binary_accuracy: 0.9572 - lr: 2.5600e-09
+Epoch 54: early stopping

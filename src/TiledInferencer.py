@@ -217,8 +217,6 @@ class TiledInferencer(Inferencer):
       if self.bitwise_blending:
         #print("--- TiledInferencer bitwise_blending")
         # Blend the non-tiled whole_mask and the tiled-background
-        print(" cv_background shape {}".format(cv_background.shape))
-        print(" whole_mask shape {}".format(whole_mask.shape))
         #cv_background = cv2.cvtColor(cv_background, cv2.COLOR_BGR2GRAY)
         cv_background = cv2.bitwise_and(whole_mask, cv_background)
 

@@ -45,7 +45,9 @@ class ConfigParser:
   INSPECCT    = "inspect"
   SHARPENING  = "sharpening"
   BRIGHTENING = "brightening"
-  
+  # 
+  BARRDISTORTION = "barrdistortion"
+
   # Constructor
   # 
   def __init__(self, config_path, verbose=True):

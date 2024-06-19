@@ -1,4 +1,6 @@
-<h2>Tensorflow-Tiled-Image-Segmentation-Augmented-Cervical-Cancer (2024/06/18)</h2>
+<h2>Tensorflow-Tiled-Image-Segmentation-Augmented-Cervical-Cancer (Updated: 2024/06/19)</h2>
+<li>2024/06/19: Updated train_eval_infer.config to improve segmentation accuracy.</li>
+<br>
 
 This is an experiment of Tiled Image Segmentation for Cervical-Cancer based on
 the <a href="https://github.com/sarah-antillia/Tensorflow-Image-Segmentation-API">Tensorflow-Image-Segmentation-API</a>, and
@@ -33,9 +35,10 @@ with a resolution of 2K pixels.
 Namely, this is a mixed set of Tiled and Non-Tiled ImageMask Datasets.<br>
 <hr>
 
-Actual Tiled Image Segmentation for the images of 2K pixels.<br>
-As shown below, the tiled inferred regions predicted by this segmentation model were not perfect, but almost successful.
-
+<b>Actual Tiled Image Segmentation for the images of 2K pixels</b><br>
+As shown below, the tiled inferred regions predicted by this segmentation model were not perfect
+This time, we set <b>bitwise_blending</b> parameter to False in [tiledinfer] section of the configuration file,
+by which a lot of cancer like cells were detected compared with the Mask (ground truth).
 <table>
 <tr>
 <th>Input: image</th>
@@ -181,6 +184,7 @@ Please move to ./projects/Tiled-Cervical-Cancer and run the following bat file.<
 <pre>
 ; train_eval_infer.config
 ; 2024/06/17 (C) antillia.com
+; 2024/06/19 (C) Updated model, train and augmentation sections
 
 [model]
 model         = "TensorflowUNet"
@@ -193,9 +197,9 @@ num_classes    = 1
 base_filters   = 16
 base_kernels   = (3,3)
 num_layers     = 8
-dropout_rate   = 0.05
+dropout_rate   = 0.04
 learning_rate  = 0.0002
-clipvalue      = 0.5
+clipvalue      = 0.3
 dilation       = (1,1)
 ;loss           = "bce_iou_loss"
 loss           = "bce_dice_loss"
@@ -205,8 +209,8 @@ show_summary   = False
 [train]
 epochs        = 100
 batch_size    = 2
-steps_per_epoch  = 200
-validation_steps = 100
+steps_per_epoch  = 400
+validation_steps = 80
 patience      = 10
 
 ;metrics       = ["iou_coef", "val_iou_coef"]
@@ -256,7 +260,7 @@ overlapping   = 128
 images_dir    = "./mini_test/Metaplastic/images"
 output_dir    = "./tiled_mini_test_output"
 merged_dir    = "./tiled_mini_test_output_merged"
-bitwise_blending = True
+bitwise_blending = False
 
 ;binarize      = True
 mask_colorize = True
@@ -284,7 +288,7 @@ vflip    = True
 hflip    = True
 rotation = True
 angles   = [60, 120, 180, 240, 300]
-shrinks  = [0.8]
+shrinks  = [0.6, 0.8]
 shears   = [0.1]
 
 deformation = True
@@ -292,14 +296,21 @@ distortion  = True
 sharpening  = False
 brightening = False
 
+barrdistortion = False
+
 [deformation]
 alpah    = 1300
-sigmoids  = [8.0]
+sigmoids  = [8.0 10.0]
 
 [distortion]
 gaussian_filter_rsigma= 40
 gaussian_filter_sigma = 0.5
-distortions           = [0.02]
+distortions           = [0.02, 0.03]
+
+[barrdistortion]
+radius = 0.3
+amount = 0.3
+centers =  [(0.3, 0.3), (0.5, 0.5), (0.7, 0.7)]
 
 [sharpening]
 k        = 1.0
@@ -308,6 +319,7 @@ k        = 1.0
 alpha  = 1.2
 beta   = 10  
 </pre>
+
 In this configuration file above, we added the following parameters to enable <b>epoch_change_infer</b> and 
 <b>epoch_change_tiledinfer</b> callbacks in [train] section.<br>
 <pre>
@@ -336,8 +348,8 @@ By using these callbacks, on every epoch_change, the inference and tile-inferenc
 <br>
 <br>  
 
-The training process has just been stopped at epoch 47 by an early-stopping callback as shown below.<br><br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/asset/train_console_output_at_epoch_47_0618.png" width="720" height="auto"><br>
+The training process has just been stopped at epoch 54 by an early-stopping callback as shown below.<br><br>
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/asset/train_console_output_at_epoch_54.png" width="720" height="auto"><br>
 <br>
 <br>
 <a href="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/eval/train_metrics.csv">train_metrics.csv</a><br>
@@ -361,10 +373,16 @@ and run the following bat file to evaluate TensorflowUNet model for Cervical-Can
 python ../../../src/TensorflowUNetEvaluator.py ./train_eval_infer.config
 </pre>
 Evaluation console output:<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/asset/evaluate_console_output_at_epoch_47_0618.png" width="720" height="auto">
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/asset/evaluate_console_output_at_epoch_54.png" width="720" height="auto">
 <br><br>
 <a href="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/evaluation.csv">evaluation.csv</a><br>
-The loss score for this test dataset is not so low as shown below.<br>
+By using the updated train_eval_infer.config, the loss score for this test dataset is slightly improved from the previous 
+experiment as shown below.<br>
+<pre>
+loss,0.2817
+binary_accuracy,0.9686
+</pre>
+previous result:
 <pre>
 loss,0.3145
 binary_accuracy,0.9588
@@ -406,11 +424,11 @@ Please move to a <b>./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Can
 python ../../../src/TensorflowUNetTiledInferencer.py ./train_eval_infer.config
 </pre>
 <br>
-<b>Bitwise_blended masks (Inferred + Tiled_inferred)</b>:<br> 
+<b>Tiled_inferred masks without bitwise_blending</b>:<br> 
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Tiled-Cervical-Cancer/asset/tiled_mini_test_output.png" width="1024" height="auto"><br> 
 
 <hr>
-Enlarged samples<br>
+<b>Enlarged samples</b><br>
 
 <table>
 <tr>
