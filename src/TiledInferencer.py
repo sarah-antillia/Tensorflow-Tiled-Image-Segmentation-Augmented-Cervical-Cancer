@@ -105,6 +105,12 @@ class TiledInferencer(Inferencer):
     if not os.path.exists(self.output_dir):
       os.makedirs(self.output_dir)
 
+    #2024/06/20
+    if os.path.exists(self.merged_dir):
+      shutil.rmtree(self.merged_dir)
+    if not os.path.exists(self.merged_dir):
+      os.makedirs(self.merged_dir)
+
   def infer(self, epoch =None):
     if self.on_epoch_change == False:
       print("=== TiledInferencer.infer ")
@@ -238,7 +244,11 @@ class TiledInferencer(Inferencer):
       if self.on_epoch_change == False:
         print("=== Saved outputfile {}".format(output_filepath))
 
-      if self.merged_dir !=None:
+      #if self.merged_dir !=None:
+      # 2024/06/20
+      # Don't save merged_image if self.on_epoch_change==True
+      if self.merged_dir !=None and self.on_epoch_change ==False:
+
         img   = np.array(image)
         img   = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
         #2024/03/10

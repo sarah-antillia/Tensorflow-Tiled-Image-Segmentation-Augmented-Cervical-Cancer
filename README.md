@@ -1,5 +1,8 @@
-<h2>Tensorflow-Tiled-Image-Segmentation-Augmented-Cervical-Cancer (Updated: 2024/06/19)</h2>
+<h2>Tensorflow-Tiled-Image-Segmentation-Augmented-Cervical-Cancer (Updated: 2024/06/20)</h2>
 <li>2024/06/19: Updated train_eval_infer.config to improve segmentation accuracy.</li>
+<li>2024/06/20: Fixed a bug in <a href="./src/Inferencer.py">Inferencer.py</a> and 
+<a href="./src/TiledInferencer.py">TiledInferencer.py</a> to save the merged images.</li>
+
 <br>
 
 This is an experiment of Tiled Image Segmentation for Cervical-Cancer based on

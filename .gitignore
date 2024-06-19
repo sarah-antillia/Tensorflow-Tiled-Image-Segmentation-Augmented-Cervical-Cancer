@@ -9,6 +9,10 @@ projects/*/*/epoch_change_infer/
 projects/*/*/epoch_change_tiledinfer/
 projects/*/*/models/
 
+# 2024/06/20
+projects/*/*/mini_test_output_merged/
+projects/*/*/tiled_mini_test_output_merged/
+
 # C extensions
 *.so
 
